@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>cocktailDB</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body >
+
+    <!-- Main  -->
+
+    <main >
+
+      <!-- Logo section - first parallax -->
+      <div class="parallax">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 my-3 d-flex justify-content-center align-items-center">
+              <div class="caption m-1 white flex_column">
+                <img  class="my-1" src="img/logo.jpeg" alt="">
+                <span class="m-2" >cocktail DB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Logo section -->
+
+      <!-- Info section - info about the app  -->
+      <div class="info_block red py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+              <div class="info_card m-5 d-flex justify-content-center align-items-center shadow_right">
+                <div class="manifest flex_column">
+                  <i class="text-center fas fa-glass-martini-alt"></i>
+                  <h1 class="text-center"> what's cocktailDB ?</h1>
+                  <h3 class="text-center"> is an WbApp that exploits the rest API technology.</h3>
+                  <h5 class="text-center"> it gives you access to an vast database of cocktails.
+                       you can search your cocktail by letter or by name
+                       to obtain a wealth of information about.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end info section  -->
+
+      <!-- Second parallax section -just for design -->
+      <div class="parallax">
+        <div class="container_fluid">
+          <div class="row">
+            <div class="col-xs-12">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end second parallax section-->
+
+      <!-- Search section - where the scripts work  -->
+      <div class="search_block red py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+              <div class="search_card m-5 d-flex justify-content-center align-items-center shadow_right">
+                <div class="manifest flex_column ">
+                  <h2 class="text-center mt-5 "> Search cocktail by name</h2>
+                  <div class="text-center mb-5">
+                    <input required id="input_index" type="text" placeholder="Search Cocktail">
+                  </div>
+                  <i class=" text-center fas fa-glass-martini-alt"></i>
+                  <h2 class="mt-5 text-center">Search cocktail by letter</h2>
+                  <div class="mb-5 letters_box d-flex justify-content-center align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end Search section  -->
+
+      <!-- Results section - where the scripts append the results  -->
+      <div class="result_block py-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 drinks_container">
+              <div id="drinks_template" class="cocktail hidden">
+                <div id="front" class="" >
+                  <img class="cover" src="" alt="">
+                </div>
+                <div id="back" class="hidden">
+                  <div class="card_flex">
+                    <h1><span id="name"></span></h1>
+                    <h2>Category : <span id="category"></span></h2>
+                    <h2>IBA : <span id="iba"></span></h2>
+                    <h2>Alcoholic : <span id="alcoholic"></span></h2>
+                    <h2>Glass : <span id="glass"></span></h2>
+                    <p>Instructions : <span id="instructions"></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end Results section  -->
+
+    </main>
+
+    <!-- Main -->
+
+    <!-- Footer -->
+
+    <footer class="greenciano">
+
+      <!-- Elements to link -->
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-12 py-5">
+            <div class="mb-5 d-flex justify-content-center align-items-center">
+
+              <a href="https://www.facebook.com/paolo.purpura/" class="fb-ic">
+                <i class="fab fa-facebook-f fa-lg white mr-md-5 mr-3 fa-3x"> </i>
+              </a>
+              <a href="https://www.linkedin.com/in/paolo-purpura-90629249/" class="li-ic">
+                <i class="fab fa-linkedin-in fa-lg white mr-md-5 mr-3 fa-4x"> </i>
+              </a>
+              <a href="https://www.instagram.com/paolo.purpura/?hl=it" class="ins-ic">
+                <i class="fab fa-instagram fa-lg white mr-md-5 mr-3 fa-4x"> </i>
+              </a>
+              <a href="https://github.com/pa-purpura" class="ins-ic">
+                <i class="fab fa-github fa-lg white mr-md-5 mr-3 fa-4x"> </i>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Elements -->
+
+      <!-- Copyright -->
+      <div class="copyright text-center py-3 darkciano">© 2020 Copyright:
+        <a href="https://www.facebook.com/paolo.purpura/"> PaoloPurpura</a>
+      </div>
+      <!-- Copyright   -->
+
+      <!-- API endpoint site -->
+      <div class="copyright text-center py-3 verydarkciano">Powered by (and thanks to):
+        <a href="https://www.thecocktaildb.com/api.php">thecocktaildb.com </a>
+      </div>
+      <!-- API   -->
+
+    </footer>
+
+    <!-- Footer -->
+
+    <!-- scripts -->
+
+    <script src="script/searchByName.js"></script>
+    <script src="script/searchByLetter.js"></script>
+
+    <!-- sripts -->
+
+  </body>
+</html>
